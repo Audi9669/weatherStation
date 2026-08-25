@@ -36,15 +36,15 @@ func main() {
 		input := scanner.Text()
 
 		if input == "get" {
-			fmt.Println("airTemp:", WeatherData.airTemp)
-			fmt.Println("airPressure:", WeatherData.airPressure)
-			fmt.Println("precipitation:", WeatherData.precipitation)
-			fmt.Println("windSpeed:", WeatherData.windSpeed)
-			fmt.Println("windDirection:", WeatherData.windDirection)
-			fmt.Println("humidity:", WeatherData.humidity)
-			fmt.Println("dewPoint:", WeatherData.dewPoint)
-			fmt.Println("soilMoisture:", WeatherData.soilMoisture)
-			fmt.Println("cloudCover:", WeatherData.cloudCover)
+			fmt.Println("airTemp:" + WeatherData.airTemp)
+			fmt.Println("airPressure:" + WeatherData.airPressure)
+			fmt.Println("precipitation:" + WeatherData.precipitation)
+			fmt.Println("windSpeed:" + WeatherData.windSpeed)
+			fmt.Println("windDirection:" + WeatherData.windDirection)
+			fmt.Println("humidity:" + WeatherData.humidity)
+			fmt.Println("dewPoint:" + WeatherData.dewPoint)
+			fmt.Println("soilMoisture:" + WeatherData.soilMoisture)
+			fmt.Println("cloudCover:" + WeatherData.cloudCover)
 
 		} else if input == "clear" {
 			WeatherData.airTemp = "NULL"
