@@ -75,6 +75,16 @@ func main() {
 
 			value := x[1]
 
+			if value != "NULL" {
+				Floatvalue, err := strconv.ParseFloat(value, 64)
+
+				if err != nil {
+					value = "NULL"
+				} else {
+					value = strconv.FormatFloat(Floatvalue, 'f', -1, 64)
+				}
+			}
+
 			switch id {
 			case 1:
 				WeatherData.airTemp = value
