@@ -67,7 +67,7 @@ func main() {
 				continue
 			}
 
-			id, err := strconv.Atoi(x[0])
+			id, err := strconv.ParseFloat(x[0], 32)
 
 			if err != nil {
 				continue
