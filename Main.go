@@ -67,7 +67,7 @@ func main() {
 				continue
 			}
 
-			id, err := strconv.ParseFloat(x[0], 'f', -1,  32).
+			id, err := strconv.Atoi(x[0])
 
 			if err != nil {
 				continue
@@ -75,13 +75,6 @@ func main() {
 
 			value := x[1]
 
-			// if value != "NULL" {
-			// 	_, err := (strconv.ParseFloat, value, 64)
-
-			// 	if err != nil {
-			// 		value = "NULL"
-			// 	}
-			// }
 			switch id {
 			case 1:
 				WeatherData.airTemp = value
