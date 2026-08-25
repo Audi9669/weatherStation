@@ -27,7 +27,7 @@ func main() {
 		cloudCover:    "NULL",
 	}
 
-	fmt.Println("- - - Weather Station - - -")
+	fmt.Println("--- Weather Station ---")
 
 	scanner := bufio.NewScanner(os.Stdin) // Read input from Terminal
 
