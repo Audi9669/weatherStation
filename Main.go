@@ -67,7 +67,7 @@ func main() {
 				continue
 			}
 
-			id, err := strconv.ParseFloat(x[0], 32)
+			id, err := strconv.ParseFloat(x[0], 'f', -1,  32).
 
 			if err != nil {
 				continue
